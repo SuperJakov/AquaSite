@@ -1,0 +1,9 @@
+:root {
+  --unselected-header-title-size: 60px;
+  --selected-header-title-size: 80px;
+  --primary-color: #0088ff;
+}
+
+.logo {
+  width: 160px;
+}
