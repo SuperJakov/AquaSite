@@ -109,7 +109,10 @@ PAGE 1
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
+  box-shadow: 12.27px 16.36px 43.63px rgba(235, 235, 235, 0.5),
+    -16.36px -10.91px 43.63px white;
 }
+
 .left-cover {
   /* Left cover */
   & .os-cover-slogan {
@@ -164,7 +167,7 @@ PAGE 1
     bottom: 1.5rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 870px) {
   .os-cover {
     grid-template-columns: 1fr;
     & .aquaos-star-container {
