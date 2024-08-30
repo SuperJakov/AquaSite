@@ -13,7 +13,7 @@ GENERAL
   --gap-beetween-header-titles: 13px;
   --semibold: 600;
   --medium: 500;
-  --welcome-font-size: 41px;
+  --titles-font-size: 41px;
   --border-radius-on-star: 22px;
   --logo-width: 55px;
   --row-gap-beetween-header-titles: 1rem;
@@ -47,7 +47,7 @@ HEADER
   top: 0; /* Ensures the header is at the top */
   left: 0; /* Aligns the header to the left edge */
   right: 0; /* Ensures the header spans the full width */
-  background-color: rgba(255, 255, 255, 0.332); /* Semi-transparent background */
+  backdrop-filter: blur(100px);
   z-index: 1000; /* Ensures the header is above other content */
   border-radius: 5px;
 }
@@ -101,7 +101,7 @@ PAGE 1
   font-family: Urbanist, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   font-weight: var(--semibold);
-  font-size: var(--welcome-font-size);
+  font-size: var(--titles-font-size);
   margin: 0;
 }
 .os-cover {
@@ -221,3 +221,11 @@ PAGE 1
 PAGE 2
 
 */
+
+.quick-introduction {
+  font-size: var(--titles-font-size);
+  font-family: Urbanist, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: var(--semibold);
+  margin: 0;
+}
