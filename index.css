@@ -10,6 +10,8 @@
   --medium: 500;
   --welcome-font-size: 41px;
   --border-radius-on-star: 22px;
+  --logo-width: 55px;
+  --row-gap-beetween-header-titles: 1rem;
 }
 
 body {
@@ -18,7 +20,10 @@ body {
 }
 
 .logo {
-  width: 55px; /* Height is set to width because of 1/1 aspect ratio */
+  width: var(
+    --logo-width
+  ); /* Height is set to width because of 1/1 aspect ratio */
+  margin-right: 5px;
 }
 .header {
   display: flex;
@@ -31,6 +36,7 @@ body {
   display: flex;
   column-gap: var(--gap-beetween-header-titles);
   align-items: center;
+  row-gap: var(--row-gap-beetween-header-titles); /* In case of small screen  */
 }
 .header-title {
   font-family: Urbanist;
@@ -122,8 +128,40 @@ body {
     bottom: 1.5rem;
   }
 }
+@media screen and (max-width: 800px) {
+  .os-cover {
+    grid-template-columns: 1fr;
+    & .aquaos-star-container {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  :root {
+    --logo-width: 40px;
+    --gap-beetween-header-titles: 6px;
+  }
+  .centered-container {
+    width: 100%;
+  }
+  .header {
+    margin: 0.5rem;
+  }
+  .header-titles {
+    flex-wrap: wrap;
+  }
+  .os-cover {
+    padding: 0;
+  }
+  .aqualauncher {
+    width: 80%;
+  }
+}
 
 .right-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Initially hide and position off-screen */
   & .aqualauncher {
     opacity: 0;
