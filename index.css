@@ -124,13 +124,14 @@ body {
 }
 
 .right-cover {
-  /* Right cover - AquaLauncher */
+  /* Initially hide and position off-screen */
   & .aqualauncher {
-    opacity: 0; /* Keep it hidden initially */
-    transform: translateY(100px); /* Position it out of view */
-    animation: Animate-in 0.3s linear;
-    animation-delay: 1s; /* Adds a 1-second delay */
-    animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation */
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  /* Start animation when image is loaded */
+  & .aqualauncher.start-animation {
+    animation: Animate-in 0.5s linear forwards; /* Forwards keeps the properties of animation after it is done */
   }
 }
 
