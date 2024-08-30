@@ -1,3 +1,8 @@
+/*
+
+GENERAL
+
+*/
 :root {
   --background-color: #f5fbff;
   --unselected-header-title-size: 20px;
@@ -18,7 +23,14 @@ body {
   font-family: Urbanist, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   background-color: var(--background-color);
+  margin-top: 100px;
 }
+
+/*
+
+HEADER
+
+*/
 
 .logo {
   width: var(
@@ -28,9 +40,16 @@ body {
 }
 .header {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 1rem;
+  justify-content: start; /* Align items to the start of the flex container */
+  align-items: center; /* Center items vertically */
+  padding: 1rem;
+  position: fixed; /* Fixes the header position */
+  top: 0; /* Ensures the header is at the top */
+  left: 0; /* Aligns the header to the left edge */
+  right: 0; /* Ensures the header spans the full width */
+  background-color: rgba(255, 255, 255, 0.332); /* Semi-transparent background */
+  z-index: 1000; /* Ensures the header is above other content */
+  border-radius: 5px;
 }
 .header-titles {
   margin-left: var(--gap-beetween-header-titles);
@@ -53,6 +72,13 @@ body {
   font-size: var(--selected-header-title-size);
   font-weight: var(--semibold); /* Semibold */
 }
+
+/*
+
+ALL PAGES
+
+*/
+
 .centered {
   display: flex;
   justify-content: center;
@@ -62,6 +88,11 @@ body {
 .centered-container {
   width: 75%;
 }
+/*
+
+PAGE 1
+
+*/
 .welcome-container {
   width: 100%;
   display: flex;
@@ -149,9 +180,6 @@ body {
   .centered-container {
     width: 100%;
   }
-  .header {
-    margin: 0.5rem;
-  }
   .header-titles {
     flex-wrap: wrap;
   }
@@ -188,3 +216,8 @@ body {
     transform: translateY(0);
   }
 }
+/*
+
+PAGE 2
+
+*/
