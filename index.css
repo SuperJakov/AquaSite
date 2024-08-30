@@ -79,7 +79,32 @@ body {
     letter-spacing: 0px;
     width: 320px;
   }
+  & .cover-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+  }
+  & .cover-btn {
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0.5rem;
+    color: var(--background-color); /* Same color as body background */
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: var(--semibold);
+    letter-spacing: 0px;
+    border: none;
+    cursor: pointer;
+    &.cover-download {
+      background-color: #80c3ff;
+    }
+    &.cover-more {
+      background-color: #b2dbff;
+    }
+  }
 }
+
 .right-cover {
   /* Right cover */
 }
