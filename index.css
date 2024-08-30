@@ -123,5 +123,23 @@ body {
 }
 
 .right-cover {
-  /* Right cover */
+  /* Right cover - AquaLauncher */
+  & .aqualauncher {
+    opacity: 0; /* Keep it hidden initially */
+    transform: translateY(100px); /* Position it out of view */
+    animation: Animate-in 0.3s linear;
+    animation-delay: 1s; /* Adds a 1-second delay */
+    animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation */
+  }
+}
+
+@keyframes Animate-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
