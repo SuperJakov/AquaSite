@@ -1,0 +1,63 @@
+/*
+
+HEADER
+
+*/
+:root {
+  --unselected-header-title-size: 20px;
+  --selected-header-title-size: 27px;
+  --selected-header-title-color: var(--primary-color);
+  --gap-beetween-header-titles: 13px;
+  --unselected-header-title-color: black;
+  --row-gap-beetween-header-titles: 1rem;
+  --logo-width: 55px;
+}
+.logo {
+  width: var(
+    --logo-width
+  ); /* Height is set to width because of 1/1 aspect ratio */
+  margin-right: 5px;
+}
+.header {
+  display: flex;
+  justify-content: start; /* Align items to the start of the flex container */
+  align-items: center; /* Center items vertically */
+  padding: 1rem;
+  position: fixed; /* Fixes the header position */
+  top: 0; /* Ensures the header is at the top */
+  left: 0; /* Aligns the header to the left edge */
+  right: 0; /* Ensures the header spans the full width */
+  backdrop-filter: blur(100px);
+  z-index: 1000; /* Ensures the header is above other content */
+  border-radius: 5px;
+}
+.header-titles {
+  margin-left: var(--gap-beetween-header-titles);
+  display: flex;
+  column-gap: var(--gap-beetween-header-titles);
+  align-items: center;
+  row-gap: var(--row-gap-beetween-header-titles); /* In case of small screen  */
+}
+.header-title {
+  font-family: Urbanist, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: var(--medium); /* Medium */
+  font-size: var(--unselected-header-title-size);
+  color: var(--unselected-header-title-color);
+  letter-spacing: 0px;
+}
+
+.header-title.selected {
+  color: var(--selected-header-title-color);
+  font-size: var(--selected-header-title-size);
+  font-weight: var(--semibold); /* Semibold */
+}
+@media screen and (max-width: 400px) {
+  :root {
+    --logo-width: 40px;
+    --gap-beetween-header-titles: 6px;
+  }
+  .header-titles {
+    flex-wrap: wrap;
+  }
+}
