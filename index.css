@@ -9,6 +9,7 @@
   --semibold: 600;
   --medium: 500;
   --welcome-font-size: 41px;
+  --border-radius-on-star: 22px;
 }
 
 body {
@@ -67,7 +68,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
-  border-radius: 22px;
 }
 .left-cover {
   /* Left cover */
@@ -112,6 +112,7 @@ body {
 
   & .aquaos-star {
     display: block;
+    border-bottom-left-radius: var(--border-radius-on-star);
   }
 
   & .aquaos-logo {
