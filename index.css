@@ -1,9 +1,33 @@
 :root {
-  --unselected-header-title-size: 60px;
-  --selected-header-title-size: 80px;
+  --unselected-header-title-size: 20px;
+  --selected-header-title-size: 27px;
   --primary-color: #0088ff;
+  --unselected-header-title-color: black;
+  --selected-header-title-color: var(--primary-color);
+}
+
+body {
+  font-family: Urbanist;
 }
 
 .logo {
-  width: 160px;
+  width: 55px; /* Height is set to width because of 1/1 aspect ratio */
+}
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header-title {
+  font-family: Urbanist;
+  font-weight: 500; /* Medium */
+  font-size: var(--unselected-header-title-size);
+  color: var(--unselected-header-title-color);
+  letter-spacing: 0px;
+}
+
+.header-title.selected {
+  color: var(--selected-header-title-color);
+  font-size: var(--selected-header-title-size);
+  font-weight: 600; /* Semibold */
 }
