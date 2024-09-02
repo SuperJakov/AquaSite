@@ -1,5 +1,5 @@
-const keypass = document.querySelector(".keypass");
-const login = document.querySelector(".login");
+const keypass = document.querySelector(".keypass-btn");
+const login = document.querySelector(".login-btn");
 
 keypass.addEventListener("click", () => {
   const alert = new CustomAlert("In progress...");
