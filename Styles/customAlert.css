@@ -1,0 +1,38 @@
+body {
+  position: relative;
+}
+
+.alert {
+  background-color: rgba(255, 228, 196, 0.237);
+  position: fixed; /* Changed from relative to fixed */
+  top: 30%; /* Adjusted to 30% from the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to exact center */;
+  text-align: center;
+  width: 20vw;
+  opacity: 1;
+  z-index: 9999; /* Ensure it's in front of other elements */
+}
+.alert > p {
+  padding: 0;
+  margin: 0;
+}
+.alert.fade-out {
+  animation: fadeOutOpacity 0.5s ease-in-out forwards,
+    moveUp 0.5s linear forwards;
+}
+
+@keyframes fadeOutOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes moveUp {
+  to {
+    top: 20%;
+  }
+}
