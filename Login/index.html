@@ -45,32 +45,15 @@
         <div class="register-text">
           <p>
             Don’t have an account?
-            <a href="signup.html" class="register-now">Register now!</a>
+            <a href="../Register/" class="register-now">Register now!</a>
           </p>
         </div>
         <div class="buttons">
-          <button class="btn slide_from_left">Use keypass</button
-          ><button class="btn">Log in!</button>
+          <button class="btn keypass">Use keypass</button
+          ><button class="btn login">Log in!</button>
         </div>
       </div>
     </div>
-    <script type="module">
-      function customAlert(message) {
-        const alertElement = document.createElement("div");
-        alertElement.classList.add("alert");
-        const alertParagraph = document.createElement("p");
-        alertParagraph.textContent = message;
-        alertElement.appendChild(alertParagraph);
-        document.body.appendChild(alertElement);
-        function fadeOut() {
-          alertElement.classList.add("fade-out");
-          setTimeout(() => {
-            alertElement.remove();
-          }, 3000);
-        }
-        setTimeout(fadeOut, 2000);
-      }
-      // customAlert("Hello, world!");
-    </script>
+    <script src="login.js" type="module"></script>
   </body>
 </html>
