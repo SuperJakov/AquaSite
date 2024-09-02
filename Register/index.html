@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+  <body class="step1">
+    <div class="center">
+      <div class="centered-div">
+        <img
+          class="aquaos-logo"
+          src="../Images/AquaOS Register logo.svg"
+          alt="AquaOS logo"
+        />
+        <h2 class="title">
+          Create an account to get new perks and the full experience!
+        </h2>
+        <div class="register-form step1">
+          <input class="form-input" type="text" placeholder="Username" />
+          <input class="form-input" type="password" placeholder="Password" />
+          <p class="already-account">
+            Already have an account?
+            <a class="login-now" href="../Login/">Login now!</a>
+          </p>
+          <button class="submit-btn">Next step</button>
+        </div>
+        <div class="register-form step2">
+          <input class="form-input" type="email" placeholder="Email" />
+          <div class="confirmation-code-container">
+            <input
+              class="form-input small-input confirmation-code"
+              type="number"
+              name="confirm_password"
+              onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+              required
+            />
+            <button class="resend-confirmation-code">Re-send</button>
+          </div>
+
+          <button class="submit-btn">Join now!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

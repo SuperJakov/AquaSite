@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-family: Urbanist, sans-serif;
+  background-color: #01010a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #01010a, #0c0c33);
+}
+body.step2 {
+  background: linear-gradient(-45deg, #01010a, #2b7b68);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.centered-div {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.aquaos-logo {
+  margin: 1rem;
+  width: 50%;
+  min-width: 170px;
+}
+
+.title {
+  font-size: 37px;
+  font-weight: 500; /* Medium */
+  text-align: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(115px);
+  background-color: rgba(255, 255, 255, 0.06);
+  width: 100%;
+  max-width: 512px;
+  border-radius: 26px;
+}
+.form-input {
+  width: 75%;
+
+  height: 50px;
+  padding: 1.5rem;
+  border: none;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.01);
+  font-family: Urbanist, sans-serif;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 500; /* Medium */
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.small-input {
+  width: 50%;
+}
+.form-input:focus {
+  /* Remove default styling of browsers */
+  outline: none;
+}
+.already-account {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 500; /* Medium */
+}
+.login-now {
+  color: #00aeff;
+}
+.submit-btn {
+  width: 362px;
+  background-color: #00aeff;
+  padding: 0.4rem;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 29px;
+  font-family: Urbanist, sans-serif;
+  color: white;
+
+  cursor: pointer;
+}
+body.step1 {
+  .step2 {
+    display: none;
+  }
+}
+body.step2 {
+  .step1 {
+    display: none;
+  }
+}
+.confirmation-code-container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+.confirmation-code {
+  min-width: 100px;
+  max-width: 160px;
+
+  /* Hide arrows */
+  -moz-appearance: textfield;
+}
+/* Hide arrows */
+.confirmation-code::-webkit-outer-spin-button,
+.confirmation-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.resend-confirmation-code {
+  background-color: #00aeff;
+  height: 50px;
+  width: 60%;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 1rem;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 20px;
+  color: white;
+}
