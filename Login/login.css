@@ -140,3 +140,14 @@ body {
   text-decoration: underline;
   color: #00aeff;
 }
+
+::selection,
+::-moz-selection {
+  color: rgb(95, 30, 198);
+  background: rgb(29, 203, 113);
+}
+a::selection,
+a::-moz-selection {
+  color: rgb(29, 203, 113);
+  background: rgb(95, 30, 198);
+}
