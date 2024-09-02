@@ -55,6 +55,7 @@ body.step2 {
   max-width: 512px;
   border-radius: 26px;
 }
+
 .form-input {
   width: 75%;
 
@@ -69,6 +70,32 @@ body.step2 {
   font-size: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.username-alert-p,
+.password-alert-p {
+  display: none;
+  color: #ff6262;
+  font-size: 20px;
+  font-weight: 500; /* Medium */
+  margin: 0;
+  text-align: left;
+  width: 75%;
+}
+.register-form.username-alert {
+  .username-alert-p {
+    display: block;
+  }
+  .username-input {
+    border: 2px solid #ff6262;
+  }
+}
+.register-form.password-alert {
+  .password-alert-p {
+    display: block;
+  }
+  .password-input {
+    border: 2px solid #ff6262;
+  }
 }
 .small-input {
   width: 50%;
@@ -87,7 +114,7 @@ body.step2 {
 }
 .submit-btn {
   width: 362px;
-  background-color: #00aeff;
+  background-color: #707070;
   padding: 0.4rem;
 
   border: none;
@@ -98,6 +125,11 @@ body.step2 {
   color: white;
 
   cursor: pointer;
+
+  transition: background-color 0.5s ease;
+}
+.submit-btn.possible {
+  background-color: #00aeff;
 }
 body.step1 {
   .step2 {

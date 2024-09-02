@@ -18,8 +18,18 @@
           Create an account to get new perks and the full experience!
         </h2>
         <div class="register-form step1">
-          <input class="form-input" type="text" placeholder="Username" />
-          <input class="form-input" type="password" placeholder="Password" />
+          <input
+            class="form-input username-input"
+            type="text"
+            placeholder="Username"
+          />
+          <p class="username-alert-p">Username taken</p>
+          <input
+            class="form-input password-input"
+            type="password"
+            placeholder="Password"
+          />
+          <p class="password-alert-p">Username taken</p>
           <p class="already-account">
             Already have an account?
             <a class="login-now" href="../Login/">Login now!</a>
@@ -33,6 +43,7 @@
               class="form-input small-input confirmation-code"
               type="number"
               name="confirm_password"
+              placeholder="Confirmation code"
               onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
               required
             />
