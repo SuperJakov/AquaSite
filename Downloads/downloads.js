@@ -1,4 +1,5 @@
-const input = document.getElementById("searchbar");
+const input = document.querySelector(".search");
+
 function search() {
   console.time("Searching...");
   const searchValue = input.value.toLowerCase();
@@ -14,3 +15,6 @@ function search() {
 
   console.timeEnd("Searching...");
 }
+input.addEventListener("keyup", search);
+// Initial search
+search();

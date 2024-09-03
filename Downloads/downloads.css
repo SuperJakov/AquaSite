@@ -5,6 +5,11 @@ body {
   background-color: #f5fbff;
   color: black;
 }
+.phone-brand-container > h1 {
+  font-size: 38px;
+  font-weight: 600; /* Semibold */
+  font-family: Urbanist, sans-serif;
+}
 .navbar-container {
   position: fixed;
   top: 20px;
@@ -100,23 +105,37 @@ body {
   bottom: 0;
   right: 0;
 }
-.searchbar-container {
+.search-container {
   position: fixed;
-  bottom: 30px;
-  right: 0px;
-  width: 400px;
+  top: 100px;
+  right: 100px;
+  width: 320px;
   height: 50px;
 }
-.searchbar input {
+.search {
   width: 300px;
   height: 50px;
   background-color: #d7ecff;
   border: 1px solid #d7ecff;
   border-radius: 20px;
+  position: relative;
+  font-size: 0.8rem;
+  font-family: Urbanist, sans-serif;
+  color: black;
+  font-weight: 600; /* Semibold */
+}
+.search-button {
+  width: 50px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .searchbar-icon {
-  width: 32px;
-  height: 32px;
+  width: 53px;
   padding: 0px 0px;
 }
 ::placeholder {
