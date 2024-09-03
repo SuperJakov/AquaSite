@@ -36,6 +36,12 @@ body {
     right: 0;
     top: 0;
 }
+.text-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #3A6AAC;
+}
 .download-button {
     font-size: 30px;
     height: 50px;
