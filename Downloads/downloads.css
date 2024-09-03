@@ -26,12 +26,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
     position: relative;
 }
-.image-container-1 {
+.banner-image-container {
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.image-container-2 {
+.star-image-container {
     position: absolute;
     right: 0;
     top: 0;
