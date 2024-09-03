@@ -1,13 +1,16 @@
+const input = document.getElementById("searchbar");
 function search() {
-  let input = document.getElementById("searchbar").value;
-  input = input.toLowerCase();
-  let x = document.getElementsByClassName("phone");
+  console.time("Searching...");
+  const searchValue = input.value.toLowerCase();
 
-  for (i = 0; i < x.length; i++) {
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.display = "none";
-    } else {
-      x[i].style.display = "list-item";
+  const phoneElements = document.querySelectorAll(".phone-container");
+  phoneElements.forEach((phoneElement) => {
+    if (phoneElement.innerHTML.toLowerCase().includes(searchValue)) {
+      phoneElement.style.display = "block";
+      return;
     }
-  }
+    phoneElement.style.display = "none";
+  });
+
+  console.timeEnd("Searching...");
 }

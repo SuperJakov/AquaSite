@@ -1,103 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-    font-size: 25px;
-    font-family: Urbanist, sans-serif;
-    background-color: #F5FBFF;
-    color: black;
+  font-size: 25px;
+  font-family: Urbanist, sans-serif;
+  background-color: #f5fbff;
+  color: black;
 }
 .navbar-container {
-    position: fixed;
-    top: 20px;
-    left: 64px;
-    padding: 0px 30px;
-    width: 100%;
-    height: 50px;
+  position: fixed;
+  top: 20px;
+  left: 64px;
+  padding: 0px 30px;
+  width: 100%;
+  height: 50px;
 }
 .aquaosicon {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 .phone-container {
-    width: 480px;
-    height: 300px;
-    border-radius: 15px;
-    background-color: #F5FBFF;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
-    position: relative;
+  width: 480px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #f5fbff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  position: relative;
 }
 .banner-image-container {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .star-image-container {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .text-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #3A6AAC;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #3a6aac;
 }
 .download-button {
-    font-size: 30px;
-    height: 50px;
-    width: 150px;
-    border-radius: 15px;
-    background-color: #80C3FF;
-    border: 1px solid #80C3FF;
-    transition-duration: 1.4s;
-    color: #F5FBFF;
+  font-size: 30px;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  background-color: #80c3ff;
+  border: 1px solid #80c3ff;
+  color: #f5fbff;
+  cursor: pointer;
 }
 .download-button:hover {
-    background-color: #8093f2;
-    border: 1px solid #8093f2;
+  background-color: #8093f2;
+  border: 1px solid #8093f2;
 }
 .more-button {
-    font-size: 30px;
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    background-color: #B2DBFF;
-    border: 1px solid #B2DBFF;
-    transition-duration: .4s;
-    color: #F5FBFF;
+  font-size: 30px;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #b2dbff;
+  border: 1px solid #b2dbff;
+  color: #f5fbff;
+  cursor: pointer;
 }
 .more-button:hover {
-    background-color: #80C3FF;
-    border: 1px solid #80C3FF;
+  background-color: #80c3ff;
+  border: 1px solid #80c3ff;
 }
 .both-buttons {
-    padding: 20px 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  padding: 20px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .searchbar-container {
-    position: fixed;
-    bottom: 30px;
-    right:0px;
-    width: 400px;
-    height: 50px;
-    
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  width: 400px;
+  height: 50px;
 }
 .searchbar input {
-    width: 300px;
-    height: 50px;
-    background-color: #D7ECFF;
-    border: 1px solid #D7ECFF;
-    border-radius: 20px;
+  width: 300px;
+  height: 50px;
+  background-color: #d7ecff;
+  border: 1px solid #d7ecff;
+  border-radius: 20px;
 }
 .searchbar-icon {
-    width:32px;
-    height:32px;
-    padding: 0px 0px;
+  width: 32px;
+  height: 32px;
+  padding: 0px 0px;
 }
 ::placeholder {
-    color: black;
-    font-family: Urbanist, sans-serif;
-    color: #0088FF;
+  color: black;
+  font-family: Urbanist, sans-serif;
+  color: #0088ff;
 }
