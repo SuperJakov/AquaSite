@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/downloads.css">
     </head>
     <body>
+        <script src="downloads.js"></script>
         <br/><br/>
         <div>
             <h1>
@@ -156,27 +157,10 @@
             <a>News</a>
         </div>
         <div class="searchbar">
-                <input type="text" id="searchbar" onkeyup="search()"  placeholder="Didn`t find your device? Search for it!">
-                <button style="background: transparent; border: transparent;" onclick="buttonpressed = true" id="butt">
-                    <img class="searchicon" src="images/SearchIcon.png" alt="">
-                </button>
-            <script>
-                function search() {
-                    buttonpressed = false;
-                    let input = document.getElementById('searchbar').value;
-                    input = input.toLowerCase();
-                    let x = document.getElementsByClassName('phone');
-
-                    for (i = 0; i < x.length; i++) {
-                      if (!x[i].innerHTML.toLowerCase().includes(input)) {
-                        x[i].style.display = "none";
-                      }
-                      else {
-                        x[i].style.display = "list-item";
-                      }
-                    }
-                  }
-            </script>
+            <input type="text" id="searchbar" onkeyup="search()"  placeholder="Didn`t find your device? Search for it!">
+            <button style="background: transparent; border: transparent;" onclick="buttonpressed = true" id="butt">
+                <img class="searchicon" src="images/SearchIcon.png" alt="">
+            </button>
         </div>
     </body>
 </html>
