@@ -51,8 +51,9 @@
               type="number"
               name="confirm_password"
               placeholder="Confirmation code"
-              onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+              onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space' && this.value.length < 6"
               required
+              maxlength="6"
             />
             <button class="resend-confirmation-code">Re-send</button>
           </div>
