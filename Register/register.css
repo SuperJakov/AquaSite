@@ -60,7 +60,7 @@ body {
   padding: 1.5rem;
   border: none;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.04);
   font-family: Urbanist, sans-serif;
   color: rgba(255, 255, 255, 0.64);
   font-weight: 500; /* Medium */
@@ -83,19 +83,19 @@ body {
 .password-input {
   transition: border 0.5s;
 }
-.username-input:invalid + .username-alert-p {
+.username-input:user-invalid + .username-alert-p {
   display: block;
 }
-.password-input:invalid + .password-alert-p {
+.password-input:user-invalid + .password-alert-p {
   display: block;
 }
 
-.username-input:invalid,
-.password-input:invalid {
+.username-input:user-invalid,
+.password-input:user-invalid {
   border: 2px solid #ff6262;
 }
-.username-input:valid,
-.password-input:valid {
+.username-input:user-valid,
+.password-input:user-valid {
   border: 2px solid #6dcd40;
 }
 .username-input:focus,
