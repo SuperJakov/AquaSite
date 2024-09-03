@@ -11,6 +11,9 @@ HEADER
   --unselected-header-title-color: black;
   --row-gap-beetween-header-titles: 1rem;
   --logo-width: 55px;
+  --medium: 500;
+  --semibold: 600;
+  --primary-color: #0088ff;
 }
 .logo {
   width: var(
@@ -37,6 +40,9 @@ HEADER
   column-gap: var(--gap-beetween-header-titles);
   align-items: center;
   row-gap: var(--row-gap-beetween-header-titles); /* In case of small screen  */
+}
+.header-titles > a {
+  text-decoration: none;
 }
 .header-title {
   font-family: Urbanist, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
