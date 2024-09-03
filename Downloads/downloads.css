@@ -13,10 +13,13 @@ body {
   width: 100%;
   height: 50px;
 }
-.aquaosicon {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+
+.phones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 .phone-container {
   width: 480px;
