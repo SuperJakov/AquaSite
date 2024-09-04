@@ -18,3 +18,10 @@ function search() {
 input.addEventListener("keyup", search);
 // Initial search
 search();
+
+phoneNum = null;
+function more(phone) {
+  phone = phoneNum;
+  document.open("more.html");
+  export {phoneNum};
+}
