@@ -1,0 +1,10 @@
+.star-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.phone-container {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+}
