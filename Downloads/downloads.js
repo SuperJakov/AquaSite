@@ -22,6 +22,6 @@ search();
 phoneNum = null;
 function more(phone) {
   phone = phoneNum;
-  window.open("./More/index.html");
+  window.location.href=./More/index.html;
   export {phoneNum};
 }
