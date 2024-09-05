@@ -22,6 +22,6 @@ search();
 phoneNum = null;
 function more(phone) {
   phone = phoneNum;
-  document.open("More/index.html.html");
+  document.open("./More/index.html");
   export {phoneNum};
 }
