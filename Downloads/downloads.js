@@ -19,9 +19,6 @@ input.addEventListener("keyup", search);
 // Initial search
 search();
 
-phoneNum = null;
 function more(phone) {
-  phone = phoneNum;
-  window.location.href="./More/";
-  export {phoneNum};
+  window.location.href = `./More/?phone=${phone}`;
 }
