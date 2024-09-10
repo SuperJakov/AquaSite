@@ -6,7 +6,11 @@
   align-items: center;
 }
 .phone-container {
-  position: fixed;
-  top: 50%;
-  right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+.text-container {
+  justify-content: center;
+  align-items: flex-start;
 }
