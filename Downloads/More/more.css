@@ -1,5 +1,7 @@
-.star-container {
+.content-container {
   display: flex;
+}
+.star-container {
   justify-content: flex-end;
   align-items: center;
 }
